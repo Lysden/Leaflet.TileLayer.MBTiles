@@ -126,7 +126,7 @@ L.TileLayer.MBTiles = L.TileLayer.extend({
 			':y': this._globalTileRange.max.y - coords.y,
 			':z': coords.z
 		});
-console.log(coords);
+
 		if ('tile_data' in row) {
 			return window.URL.createObjectURL(new Blob([row.tile_data] , {type: 'image/png'}));
 		} else {
