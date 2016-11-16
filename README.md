@@ -5,6 +5,8 @@ A [LeafletJS](http://www.leafletjs.com) plugin to load tilesets in [`.mbtiles` f
 
 ## Demo
 
+The following demo loads a ~9.6MB `.mbtiles` file with the "countries" style from the good ol' Tilemill:
+
 [http://ivansanchez.gitlab.io/Leaflet.TileLayer.MBTiles/demo/demo.html](http://ivansanchez.gitlab.io/Leaflet.TileLayer.MBTiles/demo/demo.html)
 
 ## Compatibility
