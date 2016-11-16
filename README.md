@@ -55,12 +55,11 @@ This plugin will handle the following optional metadata rows, if they exist:
 
 * `minzoom` (as the layer's `minzoom` option).
 * `maxzoom` (as the layer's `maxzoom` option).
-* `attribution` (as the layer's `attribution` option). Due to the async nature of
-  the code, attribution might not show up properly if the layer is added to the
-  map before its database is loaded.
+* `attribution` (as the layer's `attribution` option).
 
-To work around the asynchronous attribution problem, this might not work very well.
-Consider handling the metadata manually and setting Leaflet layer options accordingly.
+Due to the database being opened asynchronously, and the fact that layer options
+have to be given when the layer is instantiated, metadata handling does not work
+very well. Consider handling the metadata manually and setting Leaflet layer options accordingly.
 
 
 ## Legalese
